@@ -199,6 +199,19 @@
     padding:20px 48px;
     overflow:hidden;
   }
+
+  /* ABOUT SKILL CARDS */
+  .about-skill-card {
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:24px;
+    transition:border-color 0.3s;
+  }
+  .about-skill-card:hover { border-color:rgba(200,245,66,0.25); }
+  .about-skill-icon { font-size:28px;margin-bottom:12px; }
+  .about-skill-title { font-family:'Syne',sans-serif;font-size:16px;font-weight:800;margin-bottom:10px;color:var(--text); }
+  .about-skill-list { font-size:13px;color:var(--muted);line-height:1.9; }
   .skills-strip-inner {
     display:flex;
     align-items:center;
@@ -479,6 +492,7 @@
   <ul class="nav-links">
     <li><a href="#works">الأعمال</a></li>
     <li><a href="#services">الخدمات</a></li>
+    <li><a href="#about">من أنا</a></li>
     <li><a href="#process">طريقة عملي</a></li>
     <li><a href="#testimonials">آراء العملاء</a></li>
   </ul>
@@ -490,16 +504,16 @@
   <div class="hero-bg-text">SALMAN</div>
   <div class="hero-grid max-w">
     <div>
-      <div class="hero-badge">متاح للعمل الآن ✦</div>
-      <h1 class="hero-title">أصمّم وأبرمج<br>تجارب رقمية<br>تحقق <span class="highlight">نتائج</span></h1>
-      <p class="hero-sub">مصمم ومطوّر متخصص في المتاجر الإلكترونية وصفحات الهبوط. أجمع بين التصميم الاحترافي والبرمجة المتقدمة لأسلّمك مشروعاً جاهزاً بالكامل — تصميم + تطوير + إطلاق.</p>
+      <div class="hero-badge">مبرمج · مصمم · مسوّق ✦</div>
+      <h1 class="hero-title">أبني مشاريعك<br>من الكود<br>حتى <span class="highlight">الإطلاق</span></h1>
+      <p class="hero-sub">مطوّر ومصمم رقمي مع خلفية تسويقية — أكتب الكود، أصمم الواجهة، وأفهم كيف يفكّر العميل. نتيجة؟ مشروع متكامل يبيع ويُقنع من أول لحظة.</p>
       <div class="hero-actions">
         <a href="#works" class="btn-primary">استعرض أعمالي <span>←</span></a>
         <a href="https://wa.me/966552314130" target="_blank" class="btn-secondary">تواصل معي ←</a>
       </div>
       <div class="hero-stats">
         <div class="stat"><span class="stat-number">+80</span><span class="stat-label">مشروع منجز</span></div>
-        <div class="stat"><span class="stat-number">96%</span><span class="stat-label">رضا العملاء</span></div>
+        <div class="stat"><span class="stat-number">3in1</span><span class="stat-label">مطوّر · مصمم · مسوّق</span></div>
         <div class="stat"><span class="stat-number">3x</span><span class="stat-label">متوسط زيادة التحويل</span></div>
       </div>
     </div>
@@ -617,17 +631,18 @@
 <!-- SKILLS STRIP -->
 <div class="skills-strip">
   <div class="max-w skills-strip-inner">
-    <div class="skills-strip-text">مصمم <span class="skills-accent">+</span> مطوّر</div>
+    <div class="skills-strip-text">مطوّر <span class="skills-accent">·</span> مصمم <span class="skills-accent">·</span> مسوّق</div>
     <div class="skills-divider"></div>
     <div class="skills-list">
-      <div class="skill-pill"><span>🎨</span> UI / UX Design</div>
       <div class="skill-pill"><span>💻</span> HTML · CSS · JS</div>
       <div class="skill-pill"><span>⚙️</span> Salla · Zid Dev</div>
-      <div class="skill-pill"><span>🚀</span> Landing Pages</div>
+      <div class="skill-pill"><span>🎨</span> UI / UX Design</div>
+      <div class="skill-pill"><span>📈</span> Digital Marketing</div>
+      <div class="skill-pill"><span>🎯</span> CRO · Funnels</div>
       <div class="skill-pill"><span>🛒</span> E-commerce</div>
     </div>
     <div class="skills-divider"></div>
-    <div class="skills-strip-sub">أسلّمك التصميم <em>والكود</em> معاً</div>
+    <div class="skills-strip-sub">كود + تصميم + <em>تسويق</em></div>
   </div>
 </div>
 
@@ -665,43 +680,57 @@
     <div class="services-header reveal">
       <div>
         <div class="section-label">خدماتي</div>
-        <h2 class="section-title">ماذا أقدّم<br>لك؟</h2>
+        <h2 class="section-title">كود · تصميم<br>· تسويق</h2>
       </div>
-      <p style="max-width:320px;color:var(--muted);font-size:15px;line-height:1.7">كل خدمة مصممة بعناية لتحقيق هدف واحد: تحويل الزوار إلى عملاء دائمين.</p>
+      <p style="max-width:320px;color:var(--muted);font-size:15px;line-height:1.7">ميزتي الأساسية؟ أجمع ثلاث مهارات في شخص واحد — لا تحتاج تنسّق بين مطوّر ومصمم ومسوّق.</p>
     </div>
-    <div class="services-grid reveal" style="grid-template-columns:repeat(2,1fr);">
+    <div class="services-grid reveal" style="grid-template-columns:repeat(3,1fr);">
+
       <div class="service-card">
         <div class="service-arrow">↗</div>
         <div class="service-num">— 01</div>
-        <div class="service-icon">🛒</div>
-        <div class="service-name">تصميم المتاجر الإلكترونية</div>
-        <div class="service-desc">متاجر احترافية بتجربة مستخدم سلسة، تصميم يعكس هويتك ويرفع معدلات الشراء.</div>
-        <div class="service-tags"><span class="tag">Salla</span><span class="tag">Zid</span><span class="tag">WooCommerce</span></div>
+        <div class="service-icon">💻</div>
+        <div class="service-name">برمجة وتطوير المواقع</div>
+        <div class="service-desc">أكتب كود نظيف وسريع ومتجاوب من الصفر، أو أطوّر على منصات Salla وZid. أسلّمك موقعاً جاهزاً بالكامل.</div>
+        <div class="service-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span></div>
       </div>
+
       <div class="service-card">
         <div class="service-arrow">↗</div>
         <div class="service-num">— 02</div>
-        <div class="service-icon">🎯</div>
-        <div class="service-name">صفحات الهبوط عالية التحويل</div>
-        <div class="service-desc">صفحات مُحسّنة لتحقيق أعلى معدلات التحويل، مبنية على أسس علم النفس التسويقي.</div>
-        <div class="service-tags"><span class="tag">CRO</span><span class="tag">A/B Testing</span><span class="tag">Funnel Design</span></div>
+        <div class="service-icon">🛒</div>
+        <div class="service-name">تطوير المتاجر الإلكترونية</div>
+        <div class="service-desc">أبني متاجر احترافية كاملة — تصميم + برمجة + إعداد المنتجات. تجربة تسوق سلسة ترفع معدلات الشراء.</div>
+        <div class="service-tags"><span class="tag">Salla</span><span class="tag">Zid</span><span class="tag">WooCommerce</span></div>
       </div>
+
       <div class="service-card">
         <div class="service-arrow">↗</div>
         <div class="service-num">— 03</div>
-        <div class="service-icon">💻</div>
-        <div class="service-name">برمجة وتطوير المواقع</div>
-        <div class="service-desc">أطوّر ما أصممه بنفسي — كود نظيف وسريع ومتجاوب. من الصفر أو على منصات Salla وZid، أسلّمك موقعاً جاهزاً للإطلاق.</div>
-        <div class="service-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">PHP</span></div>
+        <div class="service-icon">🎯</div>
+        <div class="service-name">صفحات هبوط عالية التحويل</div>
+        <div class="service-desc">صفحات مبرمجة بالكامل ومحسّنة للتحويل، مبنية على فهم عميق لعلم النفس التسويقي وسلوك المستهلك.</div>
+        <div class="service-tags"><span class="tag">CRO</span><span class="tag">A/B Testing</span><span class="tag">Funnel Design</span></div>
       </div>
+
       <div class="service-card">
         <div class="service-arrow">↗</div>
         <div class="service-num">— 04</div>
         <div class="service-icon">✨</div>
         <div class="service-name">تصميم UI/UX كامل</div>
-        <div class="service-desc">من الواير فريم إلى النماذج التفاعلية، أصمم تجارب رقمية لا تُنسى.</div>
+        <div class="service-desc">من الواير فريم إلى النموذج التفاعلي. أصمم تجارب مستخدم مدروسة تُقنع الزائر وتوجّهه نحو الشراء.</div>
         <div class="service-tags"><span class="tag">Figma</span><span class="tag">Wireframing</span><span class="tag">Prototyping</span></div>
       </div>
+
+      <div class="service-card">
+        <div class="service-arrow">↗</div>
+        <div class="service-num">— 05</div>
+        <div class="service-icon">📈</div>
+        <div class="service-name">التسويق الرقمي والنمو</div>
+        <div class="service-desc">خلفيتي التسويقية تجعل مشاريعك مختلفة — أفهم الجمهور والمنافس وأبني مشروعك ليُحقق مبيعات حقيقية، مو بس يبدو جميل.</div>
+        <div class="service-tags"><span class="tag">إعلانات ميتا</span><span class="tag">SEO</span><span class="tag">Growth Hacking</span></div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1627,11 +1656,53 @@
   </div>
 </section>
 
+<!-- ABOUT -->
+<section id="about" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="max-w">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" class="reveal">
+      <div>
+        <div class="section-label">من أنا</div>
+        <h2 class="section-title" style="margin-bottom:28px;">مطوّر يصمم<br>ومسوّق يبرمج</h2>
+        <p style="font-size:16px;color:var(--muted);line-height:1.9;margin-bottom:20px;">
+          بدأت مسيرتي من <strong style="color:var(--text);">البرمجة</strong> — أكتب كود HTML وCSS وJavaScript وأطوّر على منصات Salla وZid. بعدها تعمّقت في <strong style="color:var(--text);">التصميم</strong> لأجمع بين الجمال والوظيفة. والطبقة الثالثة؟ <strong style="color:var(--accent);">التسويق</strong> — أفهم كيف يفكّر العميل وكيف تُحوّل زائراً عادياً إلى مشتري.
+        </p>
+        <p style="font-size:16px;color:var(--muted);line-height:1.9;">
+          النتيجة: لمّا تتعامل معي، ما تحتاج مطوّر ثاني ولا مصمم ثالث ولا مستشار تسويق. <strong style="color:var(--text);">كل شيء في يد واحدة.</strong>
+        </p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+        <div class="about-skill-card">
+          <div class="about-skill-icon">💻</div>
+          <div class="about-skill-title">تطوير</div>
+          <div class="about-skill-list">HTML · CSS · JS<br>PHP · Salla · Zid<br>APIs · Databases</div>
+        </div>
+        <div class="about-skill-card">
+          <div class="about-skill-icon">🎨</div>
+          <div class="about-skill-title">تصميم</div>
+          <div class="about-skill-list">UI / UX Design<br>Figma · Wireframes<br>Brand Identity</div>
+        </div>
+        <div class="about-skill-card" style="grid-column:span 2;background:rgba(200,245,66,0.05);border-color:rgba(200,245,66,0.2);">
+          <div class="about-skill-icon">📈</div>
+          <div class="about-skill-title" style="color:var(--accent);">تسويق</div>
+          <div class="about-skill-list" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;">
+            <span class="tag">إعلانات Meta</span>
+            <span class="tag">SEO</span>
+            <span class="tag">Funnels</span>
+            <span class="tag">CRO</span>
+            <span class="tag">Email Marketing</span>
+            <span class="tag">Content Strategy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section id="contact" class="cta-section">
   <div class="max-w">
-    <div class="cta-title">جاهز تبدأ<br>مشروعك؟</div>
-    <div class="cta-sub">أنا هنا لأحوّل فكرتك إلى تجربة رقمية تبيع</div>
+    <div class="cta-title">كود + تصميم<br>+ تسويق = <br>مشروعك ينجح</div>
+    <div class="cta-sub">تواصل معي وأنا أتكفّل بكل شيء — من أول سطر كود حتى أول عملية بيع</div>
     <a href="https://wa.me/966552314130" target="_blank" class="cta-btn">راسلني على واتساب ←</a>
   </div>
 </section>
